@@ -18,7 +18,7 @@ INPUTTEXT=$(</dev/stdin)
 URLTEXT="$(php -r "echo rawurlencode('${INPUTTEXT}');")"
 
 firefox --new-tab --url https://translate.google.com/\?sl\=en\&tl\=ar\&text\=$URLTEXT\&op\=translate &
-firefox --new-tab --url https://translate.google.com/\?sl\=en\&tl\=zh\&text\=$URLTEXT\&op\=translate &
+firefox --new-tab --url https://translate.google.com/\?sl\=en\&tl\=zh-CN\&text\=$URLTEXT\&op\=translate &
 firefox --new-tab --url https://translate.google.com/\?sl\=en\&tl\=fr\&text\=$URLTEXT\&op\=translate &
 firefox --new-tab --url https://translate.google.com/\?sl\=en\&tl\=ru\&text\=$URLTEXT\&op\=translate &
 firefox --new-tab --url https://translate.google.com/\?sl\=en\&tl\=es\&text\=$URLTEXT\&op\=translate &
